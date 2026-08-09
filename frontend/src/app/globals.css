@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Premium Light Flowing Gradient Background - Crisp Porcelain & Soft Sky Blue Tint */
+.gradient-mesh-bg {
+  background: linear-gradient(-45deg, #f8fafc, #f1f5f9, #e0f2fe, #f0f9ff, #f8fafc);
+  background-size: 300% 300%;
+  animation: fluidGradientFlow 22s ease-in-out infinite;
+  will-change: background-position;
+}
+
+/* Ambient Radial Glow Layer - Soft Sky Blue, Cyan & Gold Whispers */
+.ambient-glow-overlay {
+  background: 
+    radial-gradient(ellipse 85% 55% at 50% -10%, rgba(14, 165, 233, 0.14), transparent 70%),
+    radial-gradient(ellipse 65% 45% at 80% 60%, rgba(6, 182, 212, 0.12), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 15% 40%, rgba(245, 158, 11, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+/* Optimized Animated Text Gradient - Rich Charcoal-Sky Blue Contrast on Light BG */
+.animated-gradient-text {
+  background: linear-gradient(135deg, #0f172a 0%, #0284c7 35%, #0ea5e9 70%, #d97706 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShift 8s ease infinite;
+  filter: drop-shadow(0 2px 8px rgba(14, 165, 233, 0.2));
+  will-change: background-position;
+}
+
+/* Glowing Flowing Border */
+.animated-gradient-border {
+  position: relative;
+}
+.animated-gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, #0369a1, #0284c7, #38bdf8, #06b6d4);
+  background-size: 200% 200%;
+  animation: borderFlow 5s ease infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  will-change: background-position;
+}
+
+@keyframes fluidGradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes textShift {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+@keyframes borderFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom Glassmorphism Utility - Light Mode Porcelain Elevation */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+}
+
+.glass-panel-glow {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(14, 165, 233, 0.4);
+  box-shadow: 0 10px 35px -5px rgba(14, 165, 233, 0.18);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel-glow:hover {
+  border-color: rgba(14, 165, 233, 0.7);
+  box-shadow: 0 12px 40px -5px rgba(14, 165, 233, 0.28);
+}
+
+/* Premium Light Navigation Glassmorphism Pill */
+.glass-nav-pill {
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+}
+
+.glass-nav-item-active {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #38bdf8 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-nav-item-inactive {
+  color: #475569;
+  background: rgba(241, 245, 249, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-nav-item-inactive:hover {
+  color: #0f172a;
+  background: #ffffff;
+  border-color: rgba(14, 165, 233, 0.4);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.15);
+}
+
+/* Custom Light Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0ea5e9;
+}
+
+/* Hide Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
