@@ -1,0 +1,13 @@
+id,student_name,college_email,age,department,gpa,study_hours_per_week,graduation_year,annual_salary_expectation
+1,Alex Johnson,alex.2023001@university.edu,21,Computer Science,3.8,25,2024,85000
+2,Brianna Smith,brianna.2023002@university.edu,22,Data Science,3.9,30,2024,92000
+3,Charles Lee,charles.2023003@university.edu,,Electrical Eng,3.4,18,2025,78000
+4,Diana Prince,diana.2023004@university.edu,20,Computer Science,3.95,35,2026,110000
+5,Ethan Hunt,ethan.2023005@university.edu,23,Cybersecurity,3.2,15,2024,80000
+6,Fiona Gallagher,fiona.2023006@university.edu,21,Mechanical Eng,3.5,20,2025,75000
+7,George Clark,george.2023007@university.edu,,Data Science,3.1,12,2024,70000
+8,Hannah Abbott,hannah.2023008@university.edu,22,Computer Science,3.7,28,2024,88000
+9,Ian Malcolm,ian.2023009@university.edu,24,Mathematics,3.6,22,2024,82000
+10,Julia Roberts,julia.2023010@university.edu,20,Business Analytics,3.85,26,2026,95000
+11,Kevin Bacon,kevin.2023011@university.edu,22,Data Science,2.9,10,2024,65000
+12,Laura Croft,laura.2023012@university.edu,21,Cybersecurity,3.9,32,2025,105000

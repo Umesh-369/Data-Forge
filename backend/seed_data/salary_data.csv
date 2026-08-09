@@ -1,0 +1,13 @@
+employee_id,years_experience,education_level,job_role,performance_rating,salary,attrition_risk
+E101,1.5,Bachelors,Junior Analyst,3,55000,Low
+E102,3.0,Bachelors,Data Analyst,4,68000,Low
+E103,5.5,Masters,Senior Data Analyst,4,92000,Low
+E104,8.0,Masters,Data Scientist,5,125000,Medium
+E105,2.0,PhD,Research Scientist,3,98000,High
+E106,10.5,Bachelors,Lead Engineer,4,145000,Low
+E107,0.8,Bachelors,Junior Developer,2,48000,High
+E108,4.2,Masters,Machine Learning Eng,5,115000,Low
+E109,6.0,Bachelors,Senior Developer,3,102000,Medium
+E110,12.0,PhD,Principal Scientist,5,185000,Low
+E111,2.5,Bachelors,Data Analyst,3,62000,Medium
+E112,7.0,Masters,Engineering Manager,4,150000,Low
